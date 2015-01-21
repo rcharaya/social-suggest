@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <!-- Description -->
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>yahoo.yinst.social-suggest</groupId>
+    <artifactId>parent</artifactId>
+    <name>Social Suggest - Parent</name>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <!-- Modules -->
+    <modules>
+        <module>modules/infra</module>
+        <module>modules/server</module>
+        <module>modules/site</module>
+    </modules>
+
+    <properties>
+        <java.version>1.6</java.version>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <properties>
+            </properties>
+        </profile>
+    </profiles>
+
+    <!--<repositories>-->
+        <!--<repository>-->
+            <!--<id>JBoss Repo</id>-->
+            <!--<url>http://repository.jboss.com/maven2</url>-->
+        <!--</repository>-->
+    <!--</repositories>-->
+
+</project>

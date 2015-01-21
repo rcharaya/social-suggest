@@ -1,0 +1,22 @@
+{
+  "name": "Yahoo! Social Suggest",
+  "version": "1.0",
+  "description": "Social Suggest, powered by Yahoo!",
+  "background_page" : "background.html",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/*"],
+      "css": ["facebook/style.css"],
+      "js": ["facebook/facebook.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "http://www.facebook.com/",
+    "https://www.facebook.com/",
+    "notifications"
+  ]
+}

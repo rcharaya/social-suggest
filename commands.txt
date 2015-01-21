@@ -1,0 +1,11 @@
+ java -cp `find ~/.m2/repository/ -name  'hsqldb-*.jar'`:./ org.hsqldb.util.DatabaseManager
+
+cd modules/infra
+mvn exec:java
+
+cd modules/site
+mvn jetty:run
+
+cd modules/activity
+mvn exec:java
+
